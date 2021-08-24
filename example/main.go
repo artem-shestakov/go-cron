@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
-	cron := cron.Cron("* * * 5/2 *")
-	fmt.Println(cron.Schedule)
+
+	cron := cron.Cron("0/2 23/2 1/2 7/2 1/2")
+	fmt.Println(cron.Minutes)
 }
